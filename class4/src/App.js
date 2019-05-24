@@ -3,6 +3,8 @@ import Web3 from 'web3'
 import {contract_address, contract_abi} from './contract'
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/header';
+
 
 
 class App extends Component {
@@ -33,7 +35,8 @@ class App extends Component {
   render(){
     return(
       <div>
-      <p>Token Balance: {this.state.balance}</p>
+        <Header/>
+        <p>Token Balance: {this.state.balance}</p>
       </div>
       );
   }
